@@ -1,0 +1,42 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>sam pro</title>
+    <link rel="stylesheet" href="{% static 'assets/bootstrap/css/bootstrap.min.css'%}">
+    <link rel="stylesheet" href="{% static 'assets/fonts/font-awesome.min.css'%}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+    <link rel="stylesheet" href="{% static 'assets/css/login-form-1.css'%}">
+    <link rel="stylesheet" href="{% static 'assets/css/login-form.css'%}">
+    <link rel="stylesheet" href="{% static 'assets/css/Perfect-navigation-bar.css'%}">
+    <link rel="stylesheet" href="{% static 'assets/css/Pretty-Product-List.css'%}">
+    <link rel="stylesheet" href="{% static 'assets/css/Registration-Form-with-Photo.css'%}">
+    <link rel="stylesheet" href="{% static 'assets/css/styles.css'%}">
+    <link rel="stylesheet" href="{% static 'assets/css/View-Table-Details.css'%}">
+</head>
+
+<body style="background: url(&quot;https://wallpaperaccess.com/full/90763.jpg&quot;);background-size: cover;">
+    <div class="container full-height">
+        <div class="row flex center v-center full-height">
+            <div class="col-8 col-sm-4">
+                <div class="form-box" style="background: #ffffff;width: 329px;">
+                    <form action="" method="post" style="padding-right: 29px;padding-left: 29px;">{% csrf_token %}
+                        <fieldset>
+                            <legend>Sign in</legend><img id="avatar" class="avatar round" src="{% static 'assets/img/avatar.png'%}"><input class="form-control" type="email" id="username" name="username" placeholder="username">
+                            <input class="form-control" type="password" id="password" name="password" placeholder="password">
+                            <button class="btn btn-primary btn-block" role="button" type="submit">LOGIN </button>
+                        </fieldset><a href="{% url 'signup'%}" style="background: rgb(255,255,255);">Don't have an account? signup</a>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="{% static 'assets/js/jquery.min.js'%}"></script>
+    <script src="{% static 'assets/bootstrap/js/bootstrap.min.js'%}"></script>
+    <script src="{% static 'assets/js/bs-init.js'%}"></script>
+</body>
+
+</html>
